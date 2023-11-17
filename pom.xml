@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>ProductManagement</artifactId>
+	<artifactId>deepak</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ProductManagement</name>
-	<description>Spring boot application of Product management which involves operations as Customer insertion,deletion,updation.</description>
+	<name>deepak</name>
+	<description>Spring boot application of customer management which involves operations as Customer insertion,deletion,updation.</description>
 
 	<properties>
 		<java.version>19</java.version>
