@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 
 import com.example.ProductManagement.model.Customers;
 import com.example.ProductManagement.repository.CustomerRepository;
-import org.springframework.stereotype.Service;
+
 
 @Component
-@Service
+
 public class Customerimplementation {
 
 	@Autowired
