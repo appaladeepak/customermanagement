@@ -79,6 +79,7 @@
 					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 
