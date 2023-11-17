@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build/traget/deepak-0.0.1-SNAPSHOT.jar deepak.jar
+COPY --from=build/target/deepak-0.0.1-SNAPSHOT.jar deepak.jar
 EXPOSE 8081
 ENTRYPOINT ["java","-jar","deepak.jar"]
