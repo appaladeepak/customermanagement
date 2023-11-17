@@ -1,0 +1,54 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Edit Customer</title>
+	</head>
+	<body align="center">
+		<h1>Edit Customer</h1>
+		
+		<br><br>
+		<form action="#" method="post" th:action="@{/save}" th:object="${customer}">
+		<table  align="center" >
+			<tr>
+				<td>customer Id</td>
+				<td><input type="text" th:field="*{id}" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" th:field="*{firstname}"></td>
+			</tr>
+			<tr>
+				<td>Lastname</td>
+				<td><input type="text" th:field="*{lastname}"></td>
+			</tr>
+			<tr>
+				<td>Street</td>
+				<td><input type="text" th:field="*{street}"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" th:field="*{address}"></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><input type="text" th:field="*{city}"></td>
+			</tr>
+			<tr>
+				<td>State</td>
+				<td><input type="text" th:field="*{state}"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" th:field="*{email}"></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" th:field="*{phone}"></td>
+			</tr>
+			<tr>
+				
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>

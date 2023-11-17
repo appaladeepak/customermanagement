@@ -1,0 +1,43 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>customer Manager</title>
+	</head>
+	<body align="center">
+		<h1>customer Management</h1>
+		<a href="new">Add New customer</a>
+		<br><br>
+		<table border="1" align="center" cellpadding="10">
+			<thead>
+				<tr>
+					<th>Customer ID</th>
+					<th>FirstName</th>
+					<th>LastName</th>
+					<th>Street</th>
+					<th>address</th>
+					<th>city</th>
+					<th>state</th>
+					<th>email</th>
+					<th>phone</th>
+					<th>Activities</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="customer : ${listCustomers}">
+					<td th:text="${customer.id}">ID</td>
+					<td th:text="${customer.firstname}">FirstName</td>
+					<td th:text="${customer.lastname}">LastName</td>
+					<td th:text="${customer.street}">Street</td>
+					<td th:text="${customer.address}">address</td>
+					<td th:text="${customer.city}">city</td>
+					<td th:text="${customer.state}">state</td>
+					<td th:text="${customer.email}">email</td>
+					<td th:text="${customer.phone}">phone</td>
+					<td>
+						<a th:href="@{'/edit/' +${customer.id}}">Edit</a>
+						<a th:href="@{'/delete/' +${customer.id}}">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
