@@ -20,7 +20,7 @@ import com.example.ProductManagement.implementation.UserImplementation;
 import com.example.ProductManagement.model.Customers;
 import com.example.ProductManagement.model.User;
 
-@Controlle
+@Controller
 public class CustomerController {
 
 	@Autowired
